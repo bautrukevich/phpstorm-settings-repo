@@ -1,7 +1,7 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="File '.../database/migrations/2014_10_12_000000_create_users_table.php [postsms.by]'" />
-    <option name="defaultScopeName" value="File '.../database/migrations/2014_10_12_000000_create_users_table.php [postsms.by]'" />
-    <option name="SEARCH_SCOPE" value="File '.../database/migrations/2014_10_12_000000_create_users_table.php [postsms.by]'" />
+    <option name="customScope" value="All Places" />
+    <option name="defaultScopeName" value="All Places" />
+    <option name="SEARCH_SCOPE" value="All Places" />
   </component>
 </application>
