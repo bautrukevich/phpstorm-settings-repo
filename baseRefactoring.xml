@@ -1,0 +1,6 @@
+<application>
+  <component name="PhpRefactoringSettings">
+    <option name="MOVE_NAMESPACE_SEARCH_IN_COMMENTS_AND_STRINGS" value="true" />
+    <option name="MOVE_NAMESPACE_SEARCH_IN_TEXT_OCCURRENCES" value="true" />
+  </component>
+</application>
