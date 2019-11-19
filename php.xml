@@ -8,7 +8,6 @@
   </component>
   <component name="PhpInterpreters">
     <interpreters>
-      <interpreter id="a746811c-9d87-49f0-94b9-99367e93e70e" name="PHP 7.2" home="/usr/local/Cellar/php/7.2.6/bin/php" debugger_id="php.debugger.XDebug" />
       <interpreter id="b248a288-a9b6-42c3-a0be-7f6a1b7812ff" name="PHP 7.3" home="/usr/local/Cellar/php/7.3.11/bin/php" debugger_id="php.debugger.XDebug" />
     </interpreters>
   </component>
