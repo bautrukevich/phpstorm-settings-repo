@@ -2,6 +2,7 @@
   <component name="FileTypeManager" version="17">
     <extensionMap>
       <mapping pattern="CreatePlanCommand" type="PLAIN_TEXT" />
+      <mapping pattern="spiral" type="PLAIN_TEXT" />
       <mapping pattern="AbstractTask" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
