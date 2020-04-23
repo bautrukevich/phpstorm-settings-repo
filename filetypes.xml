@@ -4,6 +4,7 @@
       <mapping ext="db" type="Native" />
       <mapping pattern=".distignore" type="PLAIN_TEXT" />
       <mapping pattern="CreatePlanCommand" type="PLAIN_TEXT" />
+      <mapping pattern=".dockerignore" type="PLAIN_TEXT" />
       <mapping pattern="spiral" type="PLAIN_TEXT" />
       <mapping pattern="AbstractTask" type="PLAIN_TEXT" />
     </extensionMap>
