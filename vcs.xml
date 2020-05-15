@@ -6,8 +6,13 @@
           <option name="url" value="http://github.com" />
           <option name="userName" value="bautrukevich" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/inertiajs/inertia-laravel.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
+    <option name="cloneParentDir" value="$USER_HOME$/Code/experiments" />
   </component>
   <component name="Vcs.Log.App.Settings">
     <option name="COLUMN_ORDER">
