@@ -9,6 +9,7 @@
       <mapping pattern=".gitkeep" type="PLAIN_TEXT" />
       <mapping pattern="spiral" type="PLAIN_TEXT" />
       <mapping pattern="AbstractTask" type="PLAIN_TEXT" />
+      <mapping ext="stub" type="PLAIN_TEXT" />
       <mapping ext="dist" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
