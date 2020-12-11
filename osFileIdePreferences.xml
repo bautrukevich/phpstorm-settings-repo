@@ -1,0 +1,17 @@
+<application>
+  <component name="OSFileAssociationPreferences">
+    <option name="fileTypeNames">
+      <list>
+        <option value="PHP" />
+        <option value="PHP-x-ctp" />
+        <option value="PHP-x-hphp" />
+        <option value="PHP-x-inc" />
+        <option value="PHP-x-module" />
+        <option value="PHP-x-php4" />
+        <option value="PHP-x-php5" />
+        <option value="PHP-x-phtml" />
+      </list>
+    </option>
+    <option name="ideLocationHash" value="0255550D7ED3D9CB72351B94C98B0DB1" />
+  </component>
+</application>
