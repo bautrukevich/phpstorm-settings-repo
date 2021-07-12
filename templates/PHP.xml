@@ -1,0 +1,12 @@
+<templateSet group="PHP">
+  <template name="EntityId" value="private string $id;&#10;&#10;private function __construct()&#10;{&#10;}&#10;&#10;public static function fromString(string $id): self&#10;{&#10;    Assert::uuid($id);&#10;    $self = new self();&#10;    $self-&gt;id = $id;&#10;&#10;    return $self;&#10;}&#10;&#10;public function asString(): string&#10;{&#10;    return $this-&gt;id;&#10;}" description="Entity ID" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="Entity" value="use EventRecordingCapabilities;&#10;&#10;private EntityId $id;&#10;&#10;private function __construct()&#10;{&#10;}&#10;&#10;public static function create(EntityId $id): self&#10;{&#10;    $self = new self();&#10;    $self-&gt;id = $id;&#10;&#10;    return $self;&#10;}&#10;&#10;public function fromState(array $state): self&#10;{&#10;    $self = new self();&#10;    $self-&gt;id = EntityId::fromString($state['id']);&#10;&#10;    return $self;&#10;}&#10;&#10;public function state(): array&#10;{&#10;    return [&#10;        'id' =&gt; $this-&gt;id-&gt;asString(),&#10;    ];&#10;}" description="Entity body" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+</templateSet>
