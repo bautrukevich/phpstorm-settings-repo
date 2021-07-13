@@ -9,4 +9,9 @@
       <option name="PHP Class Member" value="true" />
     </context>
   </template>
+  <template name="StringValueObject" value="private string $title;&#10;&#10;private function __construct()&#10;{&#10;}&#10;&#10;public function fromString(string $title): self&#10;{&#10;    Assert::notEmpty($title);&#10;    $self = new self();&#10;    $self-&gt;title = $title;&#10;    &#10;    return $self;&#10;}&#10;&#10;public function asString(): string&#10;{&#10;    return $this-&gt;title;&#10;}" description="Create a value object" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
 </templateSet>
