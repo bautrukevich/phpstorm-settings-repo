@@ -2,20 +2,24 @@
   <component name="PhpAutoImport" global_constant_behavior="PREFER_FQN" global_function_behavior="PREFER_FQN" />
   <component name="PhpInterpreters">
     <interpreters>
-      <interpreter id="b248a288-a9b6-42c3-a0be-7f6a1b7812ff" name="PHP 7.3" home="/usr/local/Cellar/php/7.3.11/bin/php" debugger_id="php.debugger.XDebug" />
       <interpreter id="6b5b9f8a-9eb1-408e-ac85-67c37ad579d0" name="PHP 7.4" home="/usr/local/Cellar/php/7.4.7/bin/php" debugger_id="php.debugger.XDebug" />
+      <interpreter id="248bda5b-e653-4cb4-90d6-a89721985588" name="PHP 8.0" home="/usr/local/Cellar/php/8.0.8_1/bin/php" debugger_id="php.debugger.XDebug" />
     </interpreters>
   </component>
   <component name="PhpInterpretersPhpInfoCache">
     <phpInfoCache>
-      <interpreter name="PHP 7.4">
-        <phpinfo binary_type="PHP" php_cgi="/usr/local/Cellar/php/7.4.7/bin/php-cgi" php_cli="/usr/local/Cellar/php/7.4.7/bin/php" path_separator=":" version="7.4.7">
-          <additional_php_ini>/usr/local/etc/php/7.4/conf.d/ext-opcache.ini, /usr/local/etc/php/7.4/conf.d/php-memory-limits.ini</additional_php_ini>
-          <configuration_file>/usr/local/etc/php/7.4/php.ini</configuration_file>
+      <interpreter name="PHP 8.0">
+        <phpinfo binary_type="PHP" php_cgi="/usr/local/Cellar/php/8.0.8_1/bin/php-cgi" php_cli="/usr/local/Cellar/php/8.0.8_1/bin/php" path_separator=":" version="8.0.8">
+          <additional_php_ini>/usr/local/etc/php/8.0/conf.d/ext-opcache.ini</additional_php_ini>
+          <configuration_file>/usr/local/etc/php/8.0/php.ini</configuration_file>
           <configuration_options>
-            <configuration_option name="include_path" value=".:/usr/local/Cellar/php/7.4.7/share/php/pear" />
+            <configuration_option name="include_path" value=".:/usr/local/Cellar/php/8.0.8_1/share/php/pear" />
           </configuration_options>
-          <debuggers />
+          <debuggers>
+            <debugger_info debugger="xdebug" debugger_version="3.0.4">
+              <debug_extensions />
+            </debugger_info>
+          </debuggers>
           <loaded_extensions>
             <extension name="Core" />
             <extension name="FFI" />
@@ -63,7 +67,6 @@
             <extension name="posix" />
             <extension name="pspell" />
             <extension name="readline" />
-            <extension name="redis" />
             <extension name="session" />
             <extension name="shmop" />
             <extension name="soap" />
@@ -76,9 +79,9 @@
             <extension name="sysvshm" />
             <extension name="tidy" />
             <extension name="tokenizer" />
+            <extension name="xdebug" />
             <extension name="xml" />
             <extension name="xmlreader" />
-            <extension name="xmlrpc" />
             <extension name="xmlwriter" />
             <extension name="xsl" />
             <extension name="zip" />
