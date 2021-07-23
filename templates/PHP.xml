@@ -14,12 +14,12 @@
       <option name="PHP Class Member" value="true" />
     </context>
   </template>
-  <template name="Config" value="private array $config;&#10;&#10;private function __construct()&#10;{&#10;}&#10;&#10;public function __invoke(): array&#10;{&#10;    return [&#10;        'config' =&gt; [&#10;            'query_bus' =&gt; $this-&gt;config,&#10;        ],&#10;    ];&#10;}&#10;&#10;public static function withDefaults(): self&#10;{&#10;    $self = new self();&#10;    $self-&gt;config = [];&#10;&#10;    return $self;&#10;}" description="Config" toReformat="true" toShortenFQNames="true">
+  <template name="Config" value="private array $config;&#10;&#10;private function __construct()&#10;{&#10;}&#10;&#10;public function build(): array&#10;{&#10;    return [&#10;        'config' =&gt; [&#10;            'query_bus' =&gt; $this-&gt;config,&#10;        ],&#10;    ];&#10;}&#10;&#10;public static function withDefaults(): self&#10;{&#10;    $self = new self();&#10;    $self-&gt;config = [];&#10;&#10;    return $self;&#10;}" description="Config" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP Class Member" value="true" />
     </context>
   </template>
-  <template name="ConfigProvider" value="public function __invoke(): array&#10;{&#10;    $defaultConfig = Config::withDefaults();&#10;    $defaults = $defaultConfig();&#10;&#10;    return [&#10;        'config' =&gt; $defaults['config'],&#10;    ];&#10;}" description="Config provider" toReformat="false" toShortenFQNames="true">
+  <template name="ConfigProvider" value="public function __invoke(): array&#10;{&#10;    $defaultConfig = Config::withDefaults();&#10;    $defaults = $defaultConfig-&gt;build();&#10;&#10;    return [&#10;        'config' =&gt; $defaults['config'],&#10;    ];&#10;}" description="Config provider" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP Class Member" value="true" />
     </context>
