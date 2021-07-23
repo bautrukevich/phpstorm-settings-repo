@@ -9,7 +9,7 @@
       <option name="PHP Class Member" value="true" />
     </context>
   </template>
-  <template name="StringValueObject" value="private string $title;&#10;&#10;private function __construct()&#10;{&#10;}&#10;&#10;public function fromString(string $title): self&#10;{&#10;    Assert::notEmpty($title);&#10;    $self = new self();&#10;    $self-&gt;title = $title;&#10;    &#10;    return $self;&#10;}&#10;&#10;public function asString(): string&#10;{&#10;    return $this-&gt;title;&#10;}" description="Create a value object" toReformat="true" toShortenFQNames="true">
+  <template name="StringValueObject" value="private string $title;&#10;&#10;private function __construct()&#10;{&#10;}&#10;&#10;public static function fromString(string $title): self&#10;{&#10;    Assert::notEmpty($title);&#10;    $self = new self();&#10;    $self-&gt;title = $title;&#10;    &#10;    return $self;&#10;}&#10;&#10;public function asString(): string&#10;{&#10;    return $this-&gt;title;&#10;}" description="Create a value object" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP Class Member" value="true" />
     </context>
@@ -19,7 +19,12 @@
       <option name="PHP Class Member" value="true" />
     </context>
   </template>
-  <template name="ConfigProvider" value="public function __invoke(): array&#10;{&#10;    $defaultConfig = Config::defaults();&#10;    $defaults = $defaultConfig();&#10;&#10;    return [&#10;        'config' =&gt; $defaults['config'],&#10;    ];&#10;}" description="Config provider" toReformat="false" toShortenFQNames="true">
+  <template name="ConfigProvider" value="public function __invoke(): array&#10;{&#10;    $defaultConfig = Config::withDefaults();&#10;    $defaults = $defaultConfig();&#10;&#10;    return [&#10;        'config' =&gt; $defaults['config'],&#10;    ];&#10;}" description="Config provider" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="IntValueObject" value="private int $id;&#10;&#10;private function __construct()&#10;{&#10;}&#10;&#10;public static function fromInt(int $id): self&#10;{&#10;    $self = new self();&#10;    $self-&gt;id = $id;&#10;&#10;    return $self;&#10;}&#10;&#10;public function asInt(): int&#10;{&#10;    return $this-&gt;id;&#10;}" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP Class Member" value="true" />
     </context>
