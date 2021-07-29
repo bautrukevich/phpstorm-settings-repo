@@ -1,5 +1,5 @@
 <templateSet group="PHP">
-  <template name="EntityId" value="private string $id;&#10;&#10;private function __construct()&#10;{&#10;}&#10;&#10;public static function fromString(string $id): self&#10;{&#10;    Assert::uuid($id);&#10;    $self = new self();&#10;    $self-&gt;id = $id;&#10;&#10;    return $self;&#10;}&#10;&#10;public function asString(): string&#10;{&#10;    return $this-&gt;id;&#10;}" description="Entity ID" toReformat="true" toShortenFQNames="true">
+  <template name="EntityId" value="private string $id;&#10;&#10;private function __construct(string $id)&#10;{&#10;    Assert::uuid($id);&#10;    $this-&gt;id = $id;&#10;}&#10;&#10;public static function fromString(string $id): self&#10;{&#10;    return new self($id);&#10;}&#10;&#10;public function asString(): string&#10;{&#10;    return $this-&gt;id;&#10;}" description="Entity ID" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP Class Member" value="true" />
     </context>
@@ -9,12 +9,12 @@
       <option name="PHP Class Member" value="true" />
     </context>
   </template>
-  <template name="StringValueObject" value="private string $title;&#10;&#10;private function __construct()&#10;{&#10;}&#10;&#10;public static function fromString(string $title): self&#10;{&#10;    Assert::notEmpty($title);&#10;    $self = new self();&#10;    $self-&gt;title = $title;&#10;    &#10;    return $self;&#10;}&#10;&#10;public function asString(): string&#10;{&#10;    return $this-&gt;title;&#10;}" description="Create a value object" toReformat="true" toShortenFQNames="true">
+  <template name="StringValueObject" value="private string $title;&#10;&#10;private function __construct(string $title)&#10;{&#10;    Assert::notEmpty($title);&#10;    $this-&gt;title = $title;&#10;}&#10;&#10;public static function fromString(string $title): self&#10;{&#10;    return new self($title);&#10;}&#10;&#10;public function asString(): string&#10;{&#10;    return $this-&gt;title;&#10;}" description="Create a value object" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP Class Member" value="true" />
     </context>
   </template>
-  <template name="Config" value="private array $config;&#10;&#10;private function __construct()&#10;{&#10;}&#10;&#10;public function build(): array&#10;{&#10;    return [&#10;        'config' =&gt; [&#10;            'query_bus' =&gt; $this-&gt;config,&#10;        ],&#10;    ];&#10;}&#10;&#10;public static function withDefaults(): self&#10;{&#10;    $self = new self();&#10;    $self-&gt;config = [];&#10;&#10;    return $self;&#10;}" description="Config" toReformat="true" toShortenFQNames="true">
+  <template name="Config" value="private array $config;&#10;&#10;private function __construct(array $config)&#10;{&#10;    $this-&gt;config = $config;&#10;}&#10;&#10;public function build(): array&#10;{&#10;    return [&#10;        'config' =&gt; [&#10;            '' =&gt; $this-&gt;config,&#10;        ],&#10;    ];&#10;}&#10;&#10;public static function withDefaults(): self&#10;{&#10;    return new self([]);&#10;}" description="Config" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP Class Member" value="true" />
     </context>
@@ -24,7 +24,7 @@
       <option name="PHP Class Member" value="true" />
     </context>
   </template>
-  <template name="IntValueObject" value="private int $id;&#10;&#10;private function __construct()&#10;{&#10;}&#10;&#10;public static function fromInt(int $id): self&#10;{&#10;    $self = new self();&#10;    $self-&gt;id = $id;&#10;&#10;    return $self;&#10;}&#10;&#10;public function asInt(): int&#10;{&#10;    return $this-&gt;id;&#10;}" description="" toReformat="false" toShortenFQNames="true">
+  <template name="IntValueObject" value="private int $id;&#10;&#10;private function __construct(int $id)&#10;{&#10;    $this-&gt;id = $id;&#10;}&#10;&#10;public static function fromInt(int $id): self&#10;{&#10;    return new self($id);&#10;}&#10;&#10;public function asInt(): int&#10;{&#10;    return $this-&gt;id;&#10;}" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP Class Member" value="true" />
     </context>
