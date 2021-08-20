@@ -2,12 +2,12 @@
   <component name="FileTypeManager" version="18">
     <extensionMap>
       <mapping ext="db" type="Native" />
-      <mapping pattern=".dockerignore" type="PLAIN_TEXT" />
-      <mapping pattern="CreatePlanCommand" type="PLAIN_TEXT" />
       <mapping pattern="AbstractTask" type="PLAIN_TEXT" />
+      <mapping pattern="FlusherInterface" type="PLAIN_TEXT" />
+      <mapping pattern="CreatePlanCommand" type="PLAIN_TEXT" />
+      <mapping pattern=".dockerignore" type="PLAIN_TEXT" />
       <mapping pattern="spiral" type="PLAIN_TEXT" />
       <mapping pattern=".gitkeep" type="PLAIN_TEXT" />
-      <mapping pattern="FlusherInterface" type="PLAIN_TEXT" />
       <mapping pattern=".distignore" type="PLAIN_TEXT" />
       <mapping ext="stub" type="PLAIN_TEXT" />
       <mapping ext="dist" type="PLAIN_TEXT" />
