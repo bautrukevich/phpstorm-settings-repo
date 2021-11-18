@@ -1,0 +1,9 @@
+<application>
+  <component name="AdvancedSettings">
+    <option name="settings">
+      <map>
+        <entry key="vcs.commit.tool.window" value="false" />
+      </map>
+    </option>
+  </component>
+</application>
