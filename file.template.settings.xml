@@ -1,0 +1,16 @@
+<application>
+  <component name="ExportableFileTemplateSettings">
+    <includes_templates>
+      <template name="PHP Field Doc Comment.php" reformat="true" live-template-enabled="true" />
+      <template name="PHP File Header.php" reformat="true" live-template-enabled="true" enabled="true" />
+    </includes_templates>
+    <code_templates>
+      <template name="PHPSpec Test Method.php" reformat="true" live-template-enabled="true" enabled="true" />
+    </code_templates>
+    <internal_templates>
+      <template name="PHP Class.php" reformat="true" live-template-enabled="true" enabled="true" />
+      <template name="PHP Interface.php" reformat="true" live-template-enabled="true" enabled="true" />
+      <template name="PHPUnit Test.php" reformat="true" live-template-enabled="true" enabled="true" />
+    </internal_templates>
+  </component>
+</application>
