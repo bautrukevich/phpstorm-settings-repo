@@ -1,9 +1,3 @@
 <application>
   <component name="PhpAutoImport" global_constant_behavior="PREFER_FQN" global_function_behavior="PREFER_FQN" />
-  <component name="PhpInterpreters">
-    <interpreters>
-      <interpreter id="6b5b9f8a-9eb1-408e-ac85-67c37ad579d0" name="PHP 7.4" home="/usr/local/Cellar/php/7.4.7/bin/php" debugger_id="php.debugger.XDebug" />
-      <interpreter id="248bda5b-e653-4cb4-90d6-a89721985588" name="PHP 8.0" home="/usr/local/Cellar/php/8.0.8_1/bin/php" debugger_id="php.debugger.XDebug" />
-    </interpreters>
-  </component>
 </application>
