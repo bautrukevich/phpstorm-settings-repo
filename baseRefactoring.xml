@@ -5,6 +5,7 @@
     <option name="MOVE_SEARCH_FOR_REFERENCES_FOR_FILE" value="false" />
   </component>
   <component name="PhpRefactoringSettings">
+    <option name="MOVE_CLASS_SEARCH_IN_TEXT_OCCURRENCES" value="true" />
     <option name="MOVE_NAMESPACE_SEARCH_IN_COMMENTS_AND_STRINGS" value="true" />
     <option name="MOVE_NAMESPACE_SEARCH_IN_TEXT_OCCURRENCES" value="true" />
   </component>
